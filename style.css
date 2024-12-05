@@ -1,0 +1,39 @@
+.lesson-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .homework-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    padding: 0px 30px;
+  }
+  
+  h1 {
+    color: rgb(3, 67, 3);
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(90, 158, 75);
+  }
+  
+  /* псевдоэлемент before / after используется для добавления контента до или после элемента (лучше подходит для группы элементов) */
+  
+  /* каждой ссылке при создании будет добавлять текст из content*/
+  .a::before {
+    content: "⚡️ ";
+  }
+  
+  /* стили с псевдоклассом hover применятся к элементу при наведении на него мышкой */
+  .lesson-link:hover {
+    text-decoration: underline;
+    color: rgb(186, 220, 173);
+  }
+  
+  .homework-link:hover {
+    text-decoration: underline;
+    color: forestgreen;
+  }
