@@ -1,0 +1,88 @@
+
+
+body {
+
+  margin: 0;
+  background-image: url("./Дизайн\ без\ названия.png");
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+  padding: 0px 30px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 130px;
+  margin: 40px 0;
+  color: rgb(10, 47, 10);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.card{
+  font-size: 20px;
+}
+
+.homework-container {
+  display: flex;
+  margin: 20px 0;
+  padding: 20px;
+}
+.lesson-container {
+  display: flex;
+  margin: 20px 0;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 95, 63);
+}
+/* стили с псевдоклассом hover применятся к элементу при наведении на него мышкой */
+.lesson-link:hover {
+  text-decoration: underline;
+  color: rgb(58, 182, 21);
+}
+
+.homework-link:hover {
+  text-decoration: underline;
+  color: rgb(221, 221, 0);
+}
+
+/* псевдоэлемент before / after используется для добавления контента до или после элемента (лучше подходит для группы элементов) */
+/* каждой ссылке при создании будет добавлять текст из content*/
+a::before {
+  content: "☘";
+}
+
+footer {
+  color: rgb(10, 52, 38);
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 430px) {
+  h1 {
+    font-size: 40px;
+  }
+  a {
+    font-size: 14px;
+  }
+}
