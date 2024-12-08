@@ -1,0 +1,90 @@
+<!--Необходимо создать свою форму регистрации. Старайтесь использовать input с разными значениями атрибута type (text, tel, email, password, checkbox, date)-->
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8"> <!--Устанавливает кодировку документа-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Обеспечивает корректное отображение на мобильных устройствах-->
+    <title>Registration form</title><!--Заголовок страницы-->
+    <div>
+        <style>
+            /*Внутренние стили для оформления*/
+            body {
+                font-family: Arial, Impact, sans-serif;
+                /*Устанавливает шрифт для текста*/
+                background-color: rgba(0, 0, 0, 0.53);
+                /*Задает  серый фон для страницы*/
+                margin: 0;
+                /*Убирает отступы по краям страницы*/
+                padding: 0;
+                /*Убирает внутренние отступы*/
+                display: flex;
+                /*используется для центрирования формы*/
+                justify-content: center;
+                /*горизонтальное центрирование содержимого*/
+                align-items: center;
+                /*Вертикальное центрирование содержимого*/
+                height: 100vh;
+                /*высота страницы равна высоте экрана*/
+            }
+        </style>
+</head>
+<body>
+    <h2>Registration:</h2><!--Заголовок формы-->
+    <form>
+        <div>
+            <label for="name">Name:</label><!--Метка для поля имени-->
+            <input type="text" placeholder="Enter your name..."
+                required /><!--Поле ввода для имени,обязательное для заполнения-->
+        </div>
+        <br />
+        <div>
+            <label for="email">Email:</label><!--Метка для поля emeil-->
+            <input type="email" placeholder="Enter your email..."
+                required /><!--Поле ввода для email,обязательное для заполнения-->
+        </div>
+        <br />
+        <div>
+            <label for="phone">Telephone:</label><!--Метка для поля телефон-->
+            <input type="tel" placeholder="Enter your telephone..."
+            pattern="/+[0-9]{2}-[0-9]{3}-[0-9]{7}"
+                required /><!--Поле ввода для телефона,обязательное для заполнения-->
+        </div>
+        <br />
+        <div>
+            <label for="password">Password:</label><!--Метка для поля пароль-->
+            <input type="password" placeholder="Enter your password..." minlength="8"
+                required /><!--Поле ввода для пароля,обязательное для заполнения-->
+        </div>
+        <br />
+        <div>
+            <label for="dob">Birth:</label><!--Метка для поля даты рождения-->
+            <input type="date" id="dob" name="dob"
+                required><!--Поле ввода для даты рождения,обязательное для заполнения-->
+        </div>
+        <br />
+        <div>
+            <label><!--Начало метки для чекбокса-->
+                <input type="checkbox" name="terms"
+                    required><!--Чекбокс для согласия с условиями,обязательный для заполнения-->
+                I agree to the terms of use <!--Текст рядом с чекбоксом-->
+            </label><!--Конец метки для чекбокса-->
+        </div>
+        <br />
+        <div>
+            <button type="submit">Register</button>
+            <!--Кнопка для отправки формы-->
+    </form><!--Конец формы-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
