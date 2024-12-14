@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <section id="create">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+    <button onclick="createAcount()">Create new account</button>
+    <button onclick="showAccounts">Show all account</button>
+      
+    </section>
+    <section id = "show" >
+        <ol id = "accountList">
+
+        </ol>
+    </section>
+    <section id = "change">
+        <label for="accountId">Amount:</label>
+        <input type="text" id="accountId">
+
+        <button id="deposit">Deposit</button>
+        <button id="withdraw">Withdraw</button>
+      
+    </section>
+</body>
+</html>
