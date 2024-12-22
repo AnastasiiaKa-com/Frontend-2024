@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif; /* Основной шрифт */
+    background-image: url('https://cdn.culture.ru/images/1ccd493e-5646-512b-8ba2-8fa50a2c9142');
+    background-size: cover;
+    background-color: #f0f8ff; /* Светлый фон */
+    color: #522d2d; /* Темный текст */
+    margin: 0; /* Убираем отступы */
+    padding: 20px; /* Отступы вокруг содержимого */
+}
+
+h1 {
+    text-align: center; /* Выравнивание заголовка по центру */
+    color: #e6ebef; /* Цвет заголовка */
+}
+
+#weather-description {
+    max-width: 600px; /* Максимальная ширина блока с информацией */
+    margin: 20px auto; /* Центрирование блока */
+    padding: 20px; /* Отступы внутри блока */
+    background-color: #dbe3e3; /* Белый фон для блока */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(6, 3, 3, 0.1); /* Легкая тень для блока */
+}
+
+h2 {
+    text-align: center; /* Выравнивание подзаголовка по центру */
+    color: #5c788b; /* Цвет подзаголовка */
+}
+
+p {
+    text-align: center;
+    font-size: 18px; /* Размер шрифта для абзацев */
+    margin: 10px 0; /* Отступы сверху и снизу для абзацев */
+}
